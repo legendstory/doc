@@ -1,0 +1,126 @@
+/*****************公共样式******************/
+p,h1,h2,h3,h4,h5,h6,th,td{
+	margin:0;
+	padding:0;
+}
+
+img{
+	vertical-align: bottom;
+}
+
+ul,li{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+.lf{float:left;}
+
+.rt{float:right;}
+
+.clear{clear:both;}
+
+/*-- ****************test开始**************** --*/
+
+/*****************热词模块*******************/
+.hotWord{
+	background: #fff;	
+	padding:10px 0 0;
+}
+
+.hotWord-header{
+	height:60px;
+	line-height:60px;
+	background: #e0e0e0;
+}
+
+.hotWord-header>li:first-child{
+	margin-right:20px;
+}
+
+.hotWord-header>li:last-child{
+	margin-left:20px;
+}
+
+.hotWord-main{
+	line-height:30px;
+	background:#e0e0e0 ;
+	margin-top:1px;
+	display:flex;
+	justify-content:space-around;
+}
+/***************水平居中*****************/
+.auto{
+	width:100%;
+	height:100%;
+	border:1px solid red;
+	box-sizing:border-box;
+}
+.auto-son{
+	width:50px;
+	height:50px;
+	border:1px solid #333;
+	margin:0 auto;
+	box-sizing:border-box;
+}
+/***************在某个区域内水平垂直居中-定位*****************/
+.vp-auto{
+	width:300px;
+	height:180px;
+	margin:0 auto;
+	border:1px solid red;
+	box-sizing:border-box;
+	position:relative;
+}
+.vp-auto-son{
+	width:50px;
+	height:50px;
+	border:1px solid #333;
+	box-sizing:border-box;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	margin:auto;
+}
+/***************在某个区域内水平垂直居中-弹性布局*****************/
+.vf-auto{
+	width:300px;
+	height:180px;
+	margin:0 auto;
+	border:1px solid red;
+	box-sizing:border-box;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.vf-auto-son{
+	width:50px;
+	height:50px;
+	padding:2px;
+	border:1px solid #333;
+	box-sizing:border-box;
+}
+/***************不知道自身宽高的情况下进行水平垂直居中*****************/
+.wrap{
+	width:300px;
+	height:180px;
+	margin:0 auto;
+	border:1px solid red;
+	box-sizing:border-box;
+	position:relative;
+}
+.wrap-son{
+    width:80px;
+	height:30px;
+	border:1px solid #333;
+	box-sizing:border-box;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+	word-wrap:break-word
+}
